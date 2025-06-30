@@ -34,7 +34,7 @@ export default function Login() {
       //Poner la lógica lento del login
     >
       <Text>Buscar película : {nombre}</Text>
-      <TextInput placeholder="Buscá tu poronga de película acá" onChange={(e)=>setNombre(e.target.value)} style={{display:"flex",backgroundColor:"blue", padding:20,borderRadius:8}} />
+      <TextInput placeholder="Buscá tu película acá" onChange={(e)=>setNombre(e.target.value)} style={{display:"flex",backgroundColor:"blue", padding:20,borderRadius:8}} />
       { !pelicula ? <Button
       title="No encontrada"
       disabled={true} /> : <Button title={pelicula.Title} onPress={()=>router.navigate({
